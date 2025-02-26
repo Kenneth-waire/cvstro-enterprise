@@ -1,0 +1,253 @@
+/*
+color pallete 
+
+#f7fff7 - almost white
+#343434 - dark gray - almost white
+#2f3061 - blue dark
+#ffe66d - yellow
+#a1c6d7 - blue light */
+
+/*---------------- global styles. -------------------*/
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+@media screen and (max-width:360px){
+    html{
+        font-size:50%;
+    }
+}
+@media screen and (max-width:480px){
+    html{
+        font-size:56.25%;
+    }
+}
+*,* before, *:after {
+    box-sizing: inherit; 
+}
+content{
+   display: grid;
+   grid-template-columns:100%;
+   grid-template-rows: auto auto 40rem 70rem 20rem;
+   font-family: "Montserrat", sans-serif;
+}
+
+img{
+    border-radius: 1rem;
+    margin: 1rem;
+}
+@media screen and (max-width:480px){
+    
+     img.placeholder-remove{
+        display:none;
+     }
+
+    
+}
+
+
+
+
+/*---------------------------navigation bar -desktop---------------------------*/
+.nav-bar{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: rgba(1, 1, 55, 0.934);
+}
+
+li a:hover{
+    background-color:rgba(23, 23, 114, 0.735);
+    border-radius: 2rem;
+}
+li a {
+    display: block;
+    color:  white;
+    text-align: center;
+    padding: 1.3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color:black;
+    border-radius: 2rem;
+    margin: 0.3rem;
+}
+li{
+    float:left;
+}
+ul{
+    list-style-type: none;
+    margin: 2rem;
+    padding:1.5rem;
+    overflow: hidden;
+    background-color:rgb(153, 210, 229);
+    border-radius: 2rem;
+    width: 33.33%; 
+       
+}
+@media screen and(max-width:480px){
+   .nav-bar{
+        display:none;
+    }
+}
+/*----------------- mobile nav. ------------------*/
+
+.mobile-nav{
+    display:none;
+}
+@media screen and (max-width:768px){
+    .nav-bar{
+        display:none;
+        
+    }
+    .mobile-nav{
+        display:block;
+        background:rgba(1, 1, 55, 0.934);
+    }
+    li a {
+        font-size:10px;
+        display:inline;
+        
+
+    }
+    ul {
+        padding:20px;
+        width: 93%;
+    }
+}
+
+ 
+
+/*----------------- header. ------------------*/
+.header{
+    text-align: center;
+    background-color: lightblue;
+}
+
+h1 {
+    font-size:8rem;
+    margin: 0;
+    line-height: 1;
+    padding-top: 3rem;
+    text-align: center;
+}
+h1,h2{
+    font-family: "Caveat", cursive;
+    margin: 0;
+}
+.header h2{
+    font-size:4rem;
+}
+@media screen and (max-width:480px){
+    
+    .header h2{
+        font-size:1.7rem;
+    }
+     h1{
+        font-size:5rem;
+     }
+}
+
+/*----------------- content. ------------------*/
+.content {
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows:auto;
+    background-color:rgb(244, 238, 229);
+    gap: 2rem;
+   
+}
+.paragraph{
+    color: black;
+    font-size: 1.8rem;
+}
+@media screen and (max-width:480px){
+     .paragraph, .paragraph a{
+        font-size:14px;
+}
+}
+
+/*----------------- second-content. ------------------*/
+
+.second-content {
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: auto;
+    background-image:url('../images/placeholderimages/cvstro-female-image.webp');
+    
+}
+@media screen and (max-width:480px){
+    
+    .second-content{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+.images{
+    display: grid;
+    grid-template-columns:45% 45%;
+    grid-template-rows:auto auto ;
+    place-items:center;
+    gap: 1rem;
+    
+}
+.hide-images{
+    display:block;
+}
+@media(max-width: 768px){
+    .hide-images{
+        display: none;
+    }
+    
+}
+
+
+.paragraph-2{
+    place-items: center;
+    color: rgb(246, 234, 6);
+    font-size: 3rem;
+}
+@media screen and (max-width:480px){
+    
+    .paragraph-2{
+        font-size:1.7rem;
+    }
+     
+}
+
+
+
+/*----------------- footer. ------------------*/
+.footer{
+    text-align: center;
+    background-color:rgb(244, 238, 229);
+    color:black;
+    
+}
+.footer h2{
+    font-size:4rem;
+    padding: 2rem;
+}
+.footer a{
+    margin:1.5rem;
+}
+@media screen and (max-width:480px){
+    
+    .footer a{
+        display:block;
+        font-size:1rem;
+    }
+     
+}
+ .footer a:hover{
+    padding: 0.7rem;
+    color:rgb(253, 240, 7);
+ 
+}
+
+ a{
+    color:white;
+    padding: 0.8rem;
+    text-decoration:none;
+    background-color:black;
+    border-radius:0.5rem;
+    font-size:1.8rem;
+ }

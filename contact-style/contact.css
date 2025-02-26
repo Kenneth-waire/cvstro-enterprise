@@ -1,0 +1,83 @@
+*,* before, *:after {
+    box-sizing: inherit; 
+}
+
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:360px){
+    html{
+        font-size:50%;
+    }
+}
+@media screen and (max-width:480px){
+    html{
+        font-size:56.25%;
+    }
+}
+
+/*----------------- global styles. ------------------*/
+body{
+    font-size:2rem;
+}
+@media screen and (max-width:480px){
+    body{
+        font-size:15px;
+    }
+}
+h1,h2{
+    font-family: "Caveat", cursive;
+    margin: 0;
+}
+
+
+ a{
+     color:white;
+     padding: 0.8rem;
+     text-decoration:none;
+     background-color:rgb(69, 69, 205);
+     border-radius:0.5rem;
+     font-size:1rem;
+  }
+    
+
+
+
+
+/*----------------- contact. ------------------*/
+.contact{
+    text-align:center;
+    padding:5rem;
+    background-image:url('../images/placeholderimages/call-background.webp');
+    color:white;
+}
+
+
+
+
+
+
+/*----------------- number. ------------------*/
+.numbers{
+    text-align:center;
+    padding:5rem;
+    background:rgb(130, 172, 239);
+}
+
+
+
+
+
+/*----------------- get-in-touch. ------------------*/
+
+.getintouch{
+    text-align:center;
+    padding:5rem;
+    background:black;
+    color:white;
+}
+
+
+

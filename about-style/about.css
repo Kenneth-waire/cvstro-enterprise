@@ -1,0 +1,169 @@
+*,* before, *:after {
+    box-sizing: inherit; 
+}
+
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:360px){
+    html{
+        font-size:50%;
+    }
+}
+@media screen and (max-width:480px){
+    html{
+        font-size:56.25%;
+    }
+}
+
+/*----------------- global styles. ------------------*/
+body{
+    font-size:2rem;
+    
+}
+content{
+    display:grid;
+    grid-auto-columns: 100%;
+    grid-auto-rows: auto ;
+}
+
+@media screen and (max-width:480px){
+    body{
+        font-size:13px;
+    }
+}
+h1,h2{
+    font-family: "Caveat", cursive;
+    margin: 0;
+}
+
+
+/*----------------- navigation bar. ------------------*/
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: rgba(1, 1, 55, 0.934);
+}
+
+li a:hover{
+    background-color:rgba(23, 23, 114, 0.735);
+    border-radius: 2rem;
+}
+li a {
+    display: block;
+    color:  white;
+    text-align: center;
+    padding: 1.3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color:black;
+    border-radius: 2rem;
+    margin: 0.3rem;
+}
+li{
+    float:left;
+}
+ul{
+    list-style-type: none;
+    margin: 2rem;
+    padding:1.5rem;
+    overflow: hidden;
+    background-color:rgb(153, 210, 229);
+    border-radius: 2rem;
+    width: 33.33%; 
+       
+}
+@media screen and(max-width:480px){
+   .nav-bar{
+        display:none;
+    }
+}
+
+
+/*----------------- mobile navigation bar. ------------------*/
+.mobile-nav{
+    display:none;
+}
+@media screen and (max-width:768px){
+    .nav-bar{
+        display:none;
+        
+    }
+    .mobile-nav{
+        display:block;
+        background:rgba(1, 1, 55, 0.934);
+        padding:1px;
+    }
+    li a {
+        font-size:10px;
+        display:inline;
+        
+
+    }
+    ul {
+        padding:20px;
+        width: 93%;
+    }
+}
+
+
+
+/*----------------- header. ------------------*/
+.header{
+    background:lightblue;
+    text-align: center;
+    padding:4rem;
+}
+
+
+
+/*----------------- busim=ness overview. ------------------*/
+
+.business-overview{
+    text-align:center;
+    background-image: url('../images/placeholderimages/about-background.webp');
+    background-size:cover;
+    color:white;
+    padding:7rem;
+}
+
+
+
+
+
+/*----------------- mission. ------------------*/
+.mission{
+    text-align:center;
+    background-image:url('../images/placeholderimages/cvstro-male-image.webp') ;
+    background-size:cover;
+    color:white;
+    padding:7rem;
+}
+
+
+
+
+
+
+/*----------------- key features. ------------------*/
+.key-features{
+    text-align: center;
+    background: lightblue;
+    padding:7rem;
+    
+}
+
+
+
+
+
+
+/*----------------- how it works ------------------*/
+.how-it-works{
+    text-align: center;
+    background: #f7fff7;
+    padding:4rem;
+}
